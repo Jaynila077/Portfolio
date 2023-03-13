@@ -53,3 +53,48 @@ html{
   flex-flow: column;
   padding:0 10%;
 }
+
+.right{
+  flex: 1;   
+  padding: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left .5s; 
+  overflow-x: hidden; 
+}
+
+.home{
+
+position: relative;
+margin-left: 5vh;
+height: 35%;
+color: #fff;
+font-family: 'Anton';
+font-size: 11vh;
+top: 16vh;
+left: 22vh;
+}
+.one{
+font-size: 17vh;
+}
+#jay{
+color: #f81e42;
+}
+@media screen and (max-width: 430px) {
+.home{
+font-size: 5vh;
+}
+} 
+
+@media (max-width:768px){
+  .navbar a{
+    font-size: 3em;
+  }
+}
+
+@media (max-width:450px){
+  .navbar a{
+    font-size: 2em;
+  }
+}
