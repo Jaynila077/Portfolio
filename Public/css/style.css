@@ -18,12 +18,13 @@ html{
 }
 
 #nav-toggler{
-  -webkit-appearance: none;
-  position: fixed;
+   -webkit-appearance: none;  
+   position: fixed; 
   top:20px; right:30px;
   cursor: pointer;
-  z-index: 1010;
+  z-index: 1010; 
   font-size: 3rem;
+  color: #fff;
 }
 
 #nav-toggler:checked{
