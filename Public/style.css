@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s linear;
+}
+
+body,
+html{
+  overflow-x: hidden;
+  background-color:#010c14 
+}
+
+#nav-toggler{
+  -webkit-appearance: none;
+  position: fixed;
+  top:20px; right:30px;
+  cursor: pointer;
+  z-index: 1010;
+  font-size: 3rem;
+}
+
+#nav-toggler:checked{
+  transform: rotate(180deg);
+}
+
+#nav-toggler:checked::before{
+  content: '\f00d';
+  color:#fff;
+  transition: .2s linear .2s;
+}
+
+#nav-toggler:checked ~ .navbar{
+  left:0;
+}
+
+.navbar{
+  background-color: black;
+  position: fixed;
+  top:0; left:-110%;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  padding:0 10%;
+}
