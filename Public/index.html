@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Jay Nila</title>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
    
 <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">      
     
-<nav class="navbar">
-    <a href="#" data-text="home">home</a>
-    <a href="#" data-text="about">about</a>
-    <a href="#" data-text="services">services</a>
-    <a href="#" data-text="blogs">blogs</a>
-    <a href="#" data-text="contact">contact</a>
-    <div class="background-image"></div>
+<nav id="nav" class="navbar">
+    <ul>
+        <li><a href="#" data-text="home">home</a><span></span></li>
+        <li><a href="#" data-text="about">about</a><span></span></li>
+        <li><a href="#" data-text="services">services</a><span></span></li>
+        <li><a href="#" data-text="contact">contact</a><span></span></li>
+    </ul>
 </nav>
 <main id="main" class="right">
       
@@ -35,5 +37,7 @@
    
  
   </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

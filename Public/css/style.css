@@ -8,7 +8,7 @@
   outline: none; border:none;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .2s linear;
+  transition: all .5s linear;
 }
 
 body,
@@ -24,7 +24,7 @@ html{
   cursor: pointer;
   z-index: 1010; 
   font-size: 3rem;
-  color: #fff;
+  color: #f81e42;
 }
 
 #nav-toggler:checked{
@@ -42,17 +42,84 @@ html{
 }
 
 .navbar{
-  background-color: black;
+  background-color: #010c14;
   position: fixed;
-  top:0; left:-110%;
+  top:15%; left:-110%;
   height: 100%;
   width: 100%;
   z-index: 1000;
-  display: flex;
+  /* display: flex; */
   align-items: flex-start;
   justify-content: center;
   flex-flow: column;
   padding:0 10%;
+}
+#nav {
+  font-size: 9vmin;
+  pointer-events: auto
+}
+
+#nav ul {
+  top: 16.6%
+}
+ #nav li {
+  margin-bottom: .2em;
+  color: #fff;
+  overflow: hidden;
+  position: relative
+} 
+
+#nav a {
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  color: white;
+  position: relative;
+  overflow: visible;
+  line-height: 1;
+  position: relative;
+  z-index: 10;
+  transition: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 56px;
+  padding-top: 12px;
+  margin-left: 10px;
+}
+
+
+  #nav a+span { 
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+  transform: translateX(-105%);
+  height: 100px;
+  width: 400%;
+  background: #f81e42; 
+  background: -webkit-linear-gradient(to left,#61005c, #ff00cc, #f81e42);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,#61005c, #ff00cc, #f81e42); /*61005c , #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+}
+
+  #nav a:hover+span, 
+#nav a:focus+span {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+ } 
+ @media (max-width:768px){
+  .navbar a{
+    font-size: 4em;
+  }
+}
+
+@media (max-width:430px){
+  .navbar a{
+    font-size: 2em;
+    left: -20%;
+  }
 }
 
 .right{
@@ -82,20 +149,24 @@ font-size: 17vh;
 #jay{
 color: #f81e42;
 }
-@media screen and (max-width: 430px) {
+ @media screen and (max-width: 430px) {
 .home{
-font-size: 5vh;
+font-size: 2vh;
+margin-left: 2vh;
+left: 5%;
 }
-} 
-
-@media (max-width:768px){
-  .navbar a{
-    font-size: 3em;
+.one{
+  font-size: 6vh;
+}
+}  
+@media screen and (max-width: 810px) {
+  .home{
+    font-size: 6vh;
+    margin-left: 2vh;
+    left: 2%;
+    top: 25vh;
   }
-}
-
-@media (max-width:450px){
-  .navbar a{
-    font-size: 2em;
+  .one{
+    font-size: 9vh;
   }
 }
