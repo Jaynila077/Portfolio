@@ -20,8 +20,8 @@ html{
 }
 
 #nav-toggler{
-   -webkit-appearance: none;  
-   position: fixed; 
+  -webkit-appearance: none;  
+  position: fixed; 
   top:20px; right:30px;
   cursor: pointer;
   z-index: 1010; 
@@ -219,7 +219,7 @@ h2 {
   position: relative;
   width: 500px;
   height: 200px;
-  background-color: #fff;
+  background-color: #010c14;
   overflow: hidden;
   margin: 20px;
 }
@@ -230,7 +230,7 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 130px;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #fff;
 }
@@ -243,11 +243,12 @@ h2 {
   cursor: pointer;
 }
 .container .card p {
+  font-family:'Anton', sans-serif;
   z-index: 99;
   position: absolute;
   top: 20px;
   right: 70px;
-  color: #333;
+  color: #010c14;
   opacity: 0.7;
   font-size: 12px;
   letter-spacing: 1px;
@@ -306,7 +307,7 @@ h2 {
   bottom: 14px;
   width: 30px;
   height: 30px;
-  background-color: #DA4D1D;
+  background-color: #f81e42;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -317,6 +318,9 @@ h2 {
 .container .card button i {
   font-size: 3rem;
 }
+.container .card:hover h2{
+  font-size: 60px;
+} 
 .container .card:hover button {
   transform: scale(16.5);
 }
@@ -327,8 +331,8 @@ h2 {
   filter: grayscale(0);
 }
 .container .card2 .pic {
-  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+  background-image: url("https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80");
 }
 .container .card2 button {
-  background-color: #2b26c3;
+  background-color: #f81e42;
 }
